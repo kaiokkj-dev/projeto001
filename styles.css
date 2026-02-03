@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão */
+    background: url('fundo004.jpg') no-repeat center center fixed; /* Imagem de fundo */
+    background-size: cover; /* Cobre toda a tela */
+    height: 100vh; /*Altura total da tela */
+    justify-content: center; /*Centraliza o conteúdo na tela */
+    align-items: center; /*Centraliza o conteúdo na tela */
+    display: flex; /*Centraliza o conteúdo na tela */
+    text-align: center; /* Centraliza o texto*/
+}
+.container {
+    width: 300px; /*Largura fixa */
+    padding: 40px; /*Espaçamento interno */
+    background: transparent; /*fundo transparente */
+    backdrop-filter: blur(10px); /*Efeito de desfoque */
+    border-radius: 30px; /*Bordas arredondadas */
+    border: 3px solid rgba(255, 255, 255, 0.1); /*Borda com transparência */
+}
+.task-list{
+    padding: 8px 0; /*Remove espaçamento interno */
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+h1 {
+    font-family: 'komika axis', cursive; /*Fonte personalizada */
+    color: #000000; /*Cor do texto */
+    margin-bottom: 20px; /*Espaçamento inferior */
+    text-shadow: 0px 2px 1px #ffffff; /*Sombra, primeiro valor é deslocamento horizontal, segundo é deslocamento vertical, terceiro é o desfoque e o quarto é a cor */
+}
+#caixadoInput {
+    display: flex; /*Exibe os elementos em linha */
+    gap: 20px; /*Espaçamento entre os elementos */
+    margin-bottom: 10px; /*Espaçamento inferior */
+}
+#taskInput {
+    flex: 1; /*O input ocupa todo o espaço disponível */
+    padding: 15px; /*Espaçamento interno */
+    border: none; /*Remove borda */
+    border-radius: 10px; /*Bordas arredondadas */
+    font-size: 13px; /*Tamanho da fonte */
+    box-shadow: 3px 2px 0px rgb(0, 0, 0); /*Sombra */
+}
+#caixadoInput button {
+    background-color: transparent; /*Fundo transparente */
+    cursor: pointer; /*Cursor de mãozinha */
+    font-size: 24px; /*Tamanho da fonte */
+    color: #000000; 
+}.task-list {
+    margin-top: 20px; 
+}
+.task-item {   
+    font-family: 'komika axis', cursive; /*Fonte personalizada */
+    padding: 10px; /*Espaçamento interno */
+    border-radius: 1px;
+    display: flex; /*Exibe os elementos em linha */
+    justify-content: space-between; /*Espaçamento entre os elementos */
+    align-items: center;
+    max-width: 100%;
+    transition: all 0.7s ease;
+}
+.task-item button {
+    background-color: transparent; /*Fundo transparente */
+    cursor: pointer; /*Cursor de mãozinha */
+    font-size: 15px; /*Tamanho da fonte */
+    color: #000000; /*Cor do ícone */
+    margin:  0px;
+    padding: 6px;
+}
+.done {
+    text-decoration: line-through; /*Riscado */
+    opacity: 0.6; /*Transparência */    
+}
+.task-item span {
+    flex: 1;
+    text-align: center;
+    text-align: left;
+    word-break: break-word; /* quebrar palavras muito grandes */
+    overflow-wrap: break-word; /* impedir que o texto saia da caixa */
+      color: white;      /* cor do texto */
+    font-size: 15px;   /* tamanho */
+    font-weight: 600;  /* espessura */
+    text-shadow: 2px 1px 1px #000000;
+    margin-right: 15px;
+}
+.task-item.done span {
+    color: #bdbdbd;
+}
+#contador {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 1px 1px #000000;
+}
