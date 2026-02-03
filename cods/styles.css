@@ -11,12 +11,13 @@ body {
     text-align: center; /* Centraliza o texto*/
 }
 .container {
-    width: 300px; /*Largura fixa */
+    width: 90%; /*Largura fixa */
     padding: 40px; /*Espaçamento interno */
     background: transparent; /*fundo transparente */
     backdrop-filter: blur(10px); /*Efeito de desfoque */
     border-radius: 30px; /*Bordas arredondadas */
     border: 3px solid rgba(255, 255, 255, 0.1); /*Borda com transparência */
+    max-width: 350px;
 }
 .task-list{
     padding: 8px 0; /*Remove espaçamento interno */
@@ -94,4 +95,9 @@ h1 {
   font-weight: bold;
   color: #ffffff;
   text-shadow: 2px 1px 1px #000000;
+}
+@media (min-width: 1024px) {
+  .container {
+    transform: scale(1.4);
+  }
 }
