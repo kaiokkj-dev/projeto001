@@ -30,7 +30,7 @@ h1 {
     font-family: 'komika axis', sans-serif; /*Fonte personalizada */
     color: #000000; /*Cor do texto */
     margin-bottom: 20px; /*Espaçamento inferior */
-    text-shadow: 0px 2px 1px #ffffff; /*Sombra, primeiro valor é deslocamento horizontal, segundo é deslocamento vertical, terceiro é o desfoque e o quarto é a cor */
+    text-shadow: 0px 1px 0px #ffffff; /*Sombra, primeiro valor é deslocamento horizontal, segundo é deslocamento vertical, terceiro é o desfoque e o quarto é a cor */
 }
 #caixadoInput {
     display: flex; /*Exibe os elementos em linha */
